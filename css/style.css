@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(../hand-light-people-girl-woman-photography-1081678-pxhere.com.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .constructor {
+  width: 800px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+section .constructor .imgbx {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100%;
+  background: url(../hand-light-people-girl-woman-photography-1081678-pxhere.com.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .constructor .imgbx.active {
+  left: 50%;
+}
+
+section .constructor .signup, section .constructor .signin {
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+}
+
+section .constructor .signup form p.low, section .constructor .signin form p.low {
+  display: none;
+}
+
+section .constructor .signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 70px;
+}
+
+section .constructor .signin h1 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+section .constructor .signin form {
+  display: block;
+  width: 100%;
+}
+
+section .constructor .signin form input, section .constructor .signin form input:focus {
+  display: block;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  letter-spacing: 1px;
+  border: 1px solid #999;
+}
+
+section .constructor .signin form input[type="checkbox"] {
+  width: auto;
+  margin-top: 5px;
+}
+
+section .constructor .signin form input[type="submit"] {
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #1f70c0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .constructor .signin form input[type="submit"]:active {
+  background-color: dodgerblue;
+}
+
+section .constructor .signin form p {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+section .constructor .signin form p a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+section .constructor .signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 70px;
+}
+
+section .constructor .signup h1 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+section .constructor .signup form {
+  display: block;
+  width: 100%;
+}
+
+section .constructor .signup form input, section .constructor .signup form input:focus {
+  display: block;
+  outline: none;
+  border: 1px solid #999;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+section .constructor .signup form input[type="submit"] {
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #1f70c0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section .constructor .signup form input[type="submit"]:active {
+  background-color: dodgerblue;
+}
+
+section .constructor .signup form p {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+section .constructor .signup form p a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  section .constructor.active {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  section .constructor {
+    width: 400px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  section .constructor .imgbx {
+    display: none;
+  }
+  section .constructor .signup, section .constructor .signin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  section .constructor .signup form p, section .constructor .signin form p {
+    display: none;
+  }
+  section .constructor .signup form p.low, section .constructor .signin form p.low {
+    display: block;
+  }
+  section .constructor .signin {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */

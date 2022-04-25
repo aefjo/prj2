@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(../hand-light-people-girl-woman-photography-1081678-pxhere.com.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .constructor {
+        width: 800px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .imgbx {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 400px;
+            height: 100%;
+            background: url(../hand-light-people-girl-woman-photography-1081678-pxhere.com.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            transition: 0.5s;
+        }
+
+        .imgbx.active {
+            left: 50%;
+        }
+
+        .signup, .signin {
+            width: 400px;
+            height: 100%;
+            background-color: #fff;
+
+            form {
+                p.low {
+                    display: none;
+                }
+            }
+        }
+
+        .signin  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 70px;
+            
+            h1 {
+                font-size: 1.5em;
+                color: #555;
+                margin-bottom: 30px;
+            }
+
+            form {
+                display: block;
+                width: 100%;
+
+                input, input:focus {
+                    display: block;
+                    outline: none;
+                    margin-bottom: 20px;
+                    padding: 10px;
+                    width: 100%;
+                    letter-spacing: 1px;
+                    border: 1px solid #999;
+                }
+
+                input[type="checkbox"] {
+                    width: auto;
+                    margin-top: 5px;
+                }
+
+                input[type="submit"] {
+                    outline: none;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: 500;
+                    background-color: rgb(31, 112, 192);
+                    transition: 0.5s;
+                    &:active {
+                        background-color: dodgerblue;
+                    }
+                }
+
+                p {
+                    font-size: 0.7em;
+                    font-weight: 600;
+
+                    a {
+                        color: dodgerblue;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+        }
+
+        .signup  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 70px;
+            
+            h1 {
+                margin-bottom: 15px;
+                color: #555;
+            }
+
+            form {
+                display: block;
+                width: 100%;
+
+                input, input:focus {
+                    display: block;
+                    outline: none;
+                    border: 1px solid #999;
+                    margin-bottom: 15px;
+                    padding: 10px;
+                    width: 100%;
+                    letter-spacing: 1px;
+                }
+
+                input[type="submit"] {
+                    outline: none;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: 500;
+                    background-color: rgb(31, 112, 192);
+                    transition: 0.5s;
+                    &:active {
+                        background-color: dodgerblue;
+                    }
+                }
+
+                p {
+                    font-size: 0.7em;
+                    font-weight: 600;
+
+                    a {
+                        color: dodgerblue;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+
+        section {
+
+            .constructor.active {
+                transform: rotateY(180deg);
+
+            }
+            .constructor {
+                width: 400px;
+                transform-style: preserve-3d;
+                perspective: 1000px;
+                transition: 0.5s;
+
+                .imgbx  {
+                    display: none;
+                }
+
+                .signup, .signin {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    backface-visibility: hidden;
+                    
+
+                    form {
+
+                        p {
+                            display: none;
+                        }
+
+                        p.low {
+                            display: block;
+                        }
+                    }
+                }
+
+                .signin {
+                    transform: rotateY(-180deg);
+                    
+                }
+            }
+        }
+
+}
